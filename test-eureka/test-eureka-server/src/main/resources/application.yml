@@ -1,0 +1,22 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: test-eureka-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/chenjipdc/config
+          search-paths: test-cloud-config
+          refresh-rate: 5
+
+eureka:
+  instance:
+    hostname: localhost #指定主机地址
+  client:
+    register-with-eureka: false #指定是否要注册到注册中心（注册中心不需要开启）
+    fetch-registry: false #指定是否要从注册中心获取服务（注册中心不需要开启）
+  server:
+    enable-self-preservation: false #关闭保护模式

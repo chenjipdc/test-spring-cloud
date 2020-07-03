@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: test-nacos-client2
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+      username: nacos
+      password: nacos
+      discovery:
+        group: spring-cloud
+      config:
+        file-extension: yaml
+        name: test-nacos-client2
+        group: spring-cloud

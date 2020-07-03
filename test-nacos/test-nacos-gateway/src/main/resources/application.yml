@@ -1,0 +1,32 @@
+
+server:
+  port: 18080
+
+spring:
+  application:
+    name: test-nacos-gateway
+  cloud:
+    gateway:
+      enabled: true
+      routes:
+        - id: path_route_1
+          uri: lb://test-nacos-client1
+          order: 0
+          predicates:
+            - name: Path
+              args:
+                - p0: /user/**
+        - id: path_route_2
+          uri: lb://test-nacos-client2
+          order: 0
+          predicates:
+            - name: Path
+              args:
+                - p0: /test/**
+            - Host=127.0.0.1:18080
+    nacos:
+      server-addr: 127.0.0.1:8848
+      username: nacos
+      password: nacos
+      discovery:
+        group: spring-cloud
