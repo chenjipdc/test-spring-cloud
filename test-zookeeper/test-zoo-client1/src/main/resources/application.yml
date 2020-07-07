@@ -1,0 +1,15 @@
+
+
+server:
+  port: 8083
+
+
+
+spring:
+  application:
+    name: test-zoo-client1
+  cloud:
+    zookeeper:
+      connect-string: 128.0.0.1:2181
+      discovery:
+        root: test-zoo

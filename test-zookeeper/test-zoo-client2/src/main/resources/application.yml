@@ -1,0 +1,23 @@
+
+
+server:
+  port: 8084
+
+
+spring:
+  application:
+    name: test-zoo-client2
+  cloud:
+    zookeeper:
+      connect-string: 128.0.0.1:2181
+      discovery:
+        root: test-zoo
+        metadata:
+          name: 张三
+          age: 18
+          sex: 男
+
+
+test:
+  name: pdc
+  age: 18
