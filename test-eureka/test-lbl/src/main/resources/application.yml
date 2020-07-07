@@ -1,0 +1,14 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      # 可以使用用户名密码
+      # user:password@localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
+server:
+  port: 28080
+
+spring:
+  application:
+    name: test-lbl

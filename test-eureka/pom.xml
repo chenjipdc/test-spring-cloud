@@ -22,6 +22,7 @@
         <module>test-eureka-client1</module>
         <module>test-gateway</module>
         <module>test-eureka-apollo</module>
+        <module>test-lbl</module>
     </modules>
     <dependencies>
         <dependency>
