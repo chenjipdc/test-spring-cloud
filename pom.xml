@@ -27,8 +27,9 @@
         <module>test-common</module>
         <module>test-zookeeper</module>
         <module>test-k8s</module>
-        <module>test-sleuth</module>
+        <module>test-zipkin</module>
         <module>test-bus</module>
+        <module>test-admin</module>
     </modules>
 
     <dependencies>

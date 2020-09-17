@@ -1,0 +1,11 @@
+server:
+  port: 8290
+
+
+spring:
+  boot:
+    admin:
+      notify:
+        mail:
+          enabled: true
+          base-url: ""

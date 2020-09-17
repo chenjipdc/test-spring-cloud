@@ -1,0 +1,21 @@
+server:
+  port: 12932
+
+
+spring:
+  application:
+    name: test-zipkin-provider
+  zipkin:
+    base-url: http://127.0.0.1:9411
+  sleuth:
+    sampler:
+      rate: 1
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      # 可以使用用户名密码
+      # user:password@localhost:8761/eureka
+    register-with-eureka: true
+    fetch-registry: true
